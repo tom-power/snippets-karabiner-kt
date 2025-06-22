@@ -13,7 +13,7 @@ fun jsc(): List<KarabinerRule> =
         replacementDesc = ::javascript.name
     )
 
-private val jsc = listOf(T, P, G)
+private val jsc = listOf(J, S, C)
 
 private val javascript =
     listOf(J, A, V, A, S, C, R, I, P, T).map(::To)
