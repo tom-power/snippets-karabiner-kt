@@ -1,0 +1,3302 @@
+{
+    "title": "snippets",
+    "description": "snippets expanded with space",
+    "rules": [
+        {
+            "description": "snippets - cx -> chmodx",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "c"
+                    },
+                    "to": [
+                        {
+                            "key_code": "c"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "cx",
+                                "value": "c"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "c"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "x"
+                    },
+                    "to": [
+                        {
+                            "key_code": "x"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "cx",
+                                "value": "cx"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "x"
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "c"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "cx",
+                            "value": "c"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar"
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "cx",
+                                "value": 0
+                            }
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "c"
+                        },
+                        {
+                            "key_code": "h"
+                        },
+                        {
+                            "key_code": "m"
+                        },
+                        {
+                            "key_code": "o"
+                        },
+                        {
+                            "key_code": "d"
+                        },
+                        {
+                            "key_code": "spacebar"
+                        },
+                        {
+                            "key_code": "equal_sign",
+                            "modifiers": [
+                                "left_shift"
+                            ]
+                        },
+                        {
+                            "key_code": "x"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "x"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "cx",
+                            "value": "cx"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "snippets - ij -> intellij",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "i"
+                    },
+                    "to": [
+                        {
+                            "key_code": "i"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "ij",
+                                "value": "i"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "i"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "j"
+                    },
+                    "to": [
+                        {
+                            "key_code": "j"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "ij",
+                                "value": "ij"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "j"
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "i"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "ij",
+                            "value": "i"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar"
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "ij",
+                                "value": 0
+                            }
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "i"
+                        },
+                        {
+                            "key_code": "n"
+                        },
+                        {
+                            "key_code": "t"
+                        },
+                        {
+                            "key_code": "e"
+                        },
+                        {
+                            "key_code": "l"
+                        },
+                        {
+                            "key_code": "l"
+                        },
+                        {
+                            "key_code": "i"
+                        },
+                        {
+                            "key_code": "j"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "j"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "ij",
+                            "value": "ij"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "snippets - tpg -> javascript",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "t"
+                    },
+                    "to": [
+                        {
+                            "key_code": "t"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "tpg",
+                                "value": "t"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "t"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "p"
+                    },
+                    "to": [
+                        {
+                            "key_code": "p"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "tpg",
+                                "value": "tp"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "p"
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "t"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "tpg",
+                            "value": "t"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "g"
+                    },
+                    "to": [
+                        {
+                            "key_code": "g"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "tpg",
+                                "value": "tpg"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "g"
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "p"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "tpg",
+                            "value": "tp"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar"
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "tpg",
+                                "value": 0
+                            }
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "j"
+                        },
+                        {
+                            "key_code": "a"
+                        },
+                        {
+                            "key_code": "v"
+                        },
+                        {
+                            "key_code": "a"
+                        },
+                        {
+                            "key_code": "s"
+                        },
+                        {
+                            "key_code": "c"
+                        },
+                        {
+                            "key_code": "r"
+                        },
+                        {
+                            "key_code": "i"
+                        },
+                        {
+                            "key_code": "p"
+                        },
+                        {
+                            "key_code": "t"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "g"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "tpg",
+                            "value": "tpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "snippets - kl -> kotlin",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "k"
+                    },
+                    "to": [
+                        {
+                            "key_code": "k"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "kl",
+                                "value": "k"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "k"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "l"
+                    },
+                    "to": [
+                        {
+                            "key_code": "l"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "kl",
+                                "value": "kl"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "l"
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "k"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "kl",
+                            "value": "k"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar"
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "kl",
+                                "value": 0
+                            }
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "k"
+                        },
+                        {
+                            "key_code": "o"
+                        },
+                        {
+                            "key_code": "t"
+                        },
+                        {
+                            "key_code": "l"
+                        },
+                        {
+                            "key_code": "i"
+                        },
+                        {
+                            "key_code": "n"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "l"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "kl",
+                            "value": "kl"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "snippets - tpg -> tpower21",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "t"
+                    },
+                    "to": [
+                        {
+                            "key_code": "t"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "tpg",
+                                "value": "t"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "t"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "p"
+                    },
+                    "to": [
+                        {
+                            "key_code": "p"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "tpg",
+                                "value": "tp"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "p"
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "t"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "tpg",
+                            "value": "t"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "g"
+                    },
+                    "to": [
+                        {
+                            "key_code": "g"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "tpg",
+                                "value": "tpg"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "g"
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "p"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "tpg",
+                            "value": "tp"
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar"
+                    },
+                    "to": [
+                        {
+                            "set_variable": {
+                                "name": "tpg",
+                                "value": 0
+                            }
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "key_code": "t"
+                        },
+                        {
+                            "key_code": "p"
+                        },
+                        {
+                            "key_code": "o"
+                        },
+                        {
+                            "key_code": "w"
+                        },
+                        {
+                            "key_code": "e"
+                        },
+                        {
+                            "key_code": "r"
+                        },
+                        {
+                            "key_code": "2"
+                        },
+                        {
+                            "key_code": "1"
+                        },
+                        {
+                            "key_code": "2",
+                            "modifiers": [
+                                "left_shift"
+                            ]
+                        },
+                        {
+                            "key_code": "g"
+                        },
+                        {
+                            "key_code": "m"
+                        },
+                        {
+                            "key_code": "a"
+                        },
+                        {
+                            "key_code": "i"
+                        },
+                        {
+                            "key_code": "l"
+                        },
+                        {
+                            "key_code": "period"
+                        },
+                        {
+                            "key_code": "c"
+                        },
+                        {
+                            "key_code": "o"
+                        },
+                        {
+                            "key_code": "m"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKeyCode",
+                            "value": "g"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "tpg",
+                            "value": "tpg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "description": "snippets - last key",
+            "manipulators": [
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "a"
+                    },
+                    "to": [
+                        {
+                            "key_code": "a"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "a"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "alternate_erase"
+                    },
+                    "to": [
+                        {
+                            "key_code": "alternate_erase"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "alternateerase"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "apple_display_brightness_decrement"
+                    },
+                    "to": [
+                        {
+                            "key_code": "apple_display_brightness_decrement"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "appledisplaybrightnessdecrement"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "apple_display_brightness_increment"
+                    },
+                    "to": [
+                        {
+                            "key_code": "apple_display_brightness_increment"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "appledisplaybrightnessincrement"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "apple_top_case_display_brightness_decrement"
+                    },
+                    "to": [
+                        {
+                            "key_code": "apple_top_case_display_brightness_decrement"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "appletopcasedisplaybrightnessdecrement"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "apple_top_case_display_brightness_increment"
+                    },
+                    "to": [
+                        {
+                            "key_code": "apple_top_case_display_brightness_increment"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "appletopcasedisplaybrightnessincrement"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "b"
+                    },
+                    "to": [
+                        {
+                            "key_code": "b"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "b"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "backslash"
+                    },
+                    "to": [
+                        {
+                            "key_code": "backslash"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "backslash"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "c"
+                    },
+                    "to": [
+                        {
+                            "key_code": "c"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "c"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "cancel"
+                    },
+                    "to": [
+                        {
+                            "key_code": "cancel"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "cancel"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "caps_lock"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "capslock"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "clear"
+                    },
+                    "to": [
+                        {
+                            "key_code": "clear"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "clear"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "clear_or_again"
+                    },
+                    "to": [
+                        {
+                            "key_code": "clear_or_again"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "clearoragain"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "close_bracket"
+                    },
+                    "to": [
+                        {
+                            "key_code": "close_bracket"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "closebracket"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "comma"
+                    },
+                    "to": [
+                        {
+                            "key_code": "comma"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "comma"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "cr_sel_or_props"
+                    },
+                    "to": [
+                        {
+                            "key_code": "cr_sel_or_props"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "crselorprops"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "d"
+                    },
+                    "to": [
+                        {
+                            "key_code": "d"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "d"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "dashboard"
+                    },
+                    "to": [
+                        {
+                            "key_code": "dashboard"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "dashboard"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "delete_forward"
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_forward"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "deleteforward"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "delete_or_backspace"
+                    },
+                    "to": [
+                        {
+                            "key_code": "delete_or_backspace"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "deleteorbackspace"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "display_brightness_decrement"
+                    },
+                    "to": [
+                        {
+                            "key_code": "display_brightness_decrement"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "displaybrightnessdecrement"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "display_brightness_increment"
+                    },
+                    "to": [
+                        {
+                            "key_code": "display_brightness_increment"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "displaybrightnessincrement"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "down_arrow"
+                    },
+                    "to": [
+                        {
+                            "key_code": "down_arrow"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "downarrow"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "e"
+                    },
+                    "to": [
+                        {
+                            "key_code": "e"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "e"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "eject"
+                    },
+                    "to": [
+                        {
+                            "key_code": "eject"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "eject"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "end"
+                    },
+                    "to": [
+                        {
+                            "key_code": "end"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "end"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "equal_sign"
+                    },
+                    "to": [
+                        {
+                            "key_code": "equal_sign"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "equalsign"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "escape"
+                    },
+                    "to": [
+                        {
+                            "key_code": "escape"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "escape"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "ex_sel"
+                    },
+                    "to": [
+                        {
+                            "key_code": "ex_sel"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "exsel"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f1"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f1"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f10"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f10"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f10"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f11"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f11"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f11"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f12"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f12"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f12"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f13"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f13"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f13"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f14"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f14"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f14"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f15"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f15"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f15"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f16"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f16"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f16"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f17"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f17"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f17"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f18"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f18"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f18"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f19"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f19"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f19"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f2"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f2"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f20"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f20"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f20"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f21"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f21"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f21"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f22"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f22"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f22"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f23"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f23"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f23"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f24"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f24"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f24"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f3"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f3"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f3"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f4"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f4"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f4"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f5"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f5"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f5"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f6"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f6"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f6"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f7"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f7"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f7"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f8"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f8"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f8"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "f9"
+                    },
+                    "to": [
+                        {
+                            "key_code": "f9"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "f9"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "fastforward"
+                    },
+                    "to": [
+                        {
+                            "key_code": "fastforward"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "fastforward"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "g"
+                    },
+                    "to": [
+                        {
+                            "key_code": "g"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "g"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "grave_accent_and_tilde"
+                    },
+                    "to": [
+                        {
+                            "key_code": "grave_accent_and_tilde"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "graveaccentandtilde"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "h"
+                    },
+                    "to": [
+                        {
+                            "key_code": "h"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "h"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "home"
+                    },
+                    "to": [
+                        {
+                            "key_code": "home"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "home"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "hyphen"
+                    },
+                    "to": [
+                        {
+                            "key_code": "hyphen"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "hyphen"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "i"
+                    },
+                    "to": [
+                        {
+                            "key_code": "i"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "i"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "illumination_decrement"
+                    },
+                    "to": [
+                        {
+                            "key_code": "illumination_decrement"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "illuminationdecrement"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "illumination_increment"
+                    },
+                    "to": [
+                        {
+                            "key_code": "illumination_increment"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "illuminationincrement"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "j"
+                    },
+                    "to": [
+                        {
+                            "key_code": "j"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "j"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "k"
+                    },
+                    "to": [
+                        {
+                            "key_code": "k"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "k"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_0"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_0"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypad0"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_1"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_1"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypad1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_2"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_2"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypad2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_3"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_3"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypad3"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_4"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_4"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypad4"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_5"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_5"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypad5"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_6"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_6"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypad6"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_7"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_7"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypad7"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_8"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_8"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypad8"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_9"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_9"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypad9"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_asterisk"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_asterisk"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypadasterisk"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_comma"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_comma"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypadcomma"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_enter"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_enter"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypadenter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_equal_sign"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_equal_sign"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypadequalsign"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_equal_sign_as400"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_equal_sign_as400"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypadequalsignas400"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_hyphen"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_hyphen"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypadhyphen"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_num_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_num_lock"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypadnumlock"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_period"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_period"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypadperiod"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_plus"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_plus"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypadplus"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "keypad_slash"
+                    },
+                    "to": [
+                        {
+                            "key_code": "keypad_slash"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "keypadslash"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "l"
+                    },
+                    "to": [
+                        {
+                            "key_code": "l"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "l"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "launchpad"
+                    },
+                    "to": [
+                        {
+                            "key_code": "launchpad"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "launchpad"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "left_arrow"
+                    },
+                    "to": [
+                        {
+                            "key_code": "left_arrow"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "leftarrow"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "locking_caps_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "locking_caps_lock"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "lockingcapslock"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "locking_num_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "locking_num_lock"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "lockingnumlock"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "locking_scroll_lock"
+                    },
+                    "to": [
+                        {
+                            "key_code": "locking_scroll_lock"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "lockingscrolllock"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "m"
+                    },
+                    "to": [
+                        {
+                            "key_code": "m"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "m"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "mission_control"
+                    },
+                    "to": [
+                        {
+                            "key_code": "mission_control"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "missioncontrol"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "mute"
+                    },
+                    "to": [
+                        {
+                            "key_code": "mute"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "mute"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "n"
+                    },
+                    "to": [
+                        {
+                            "key_code": "n"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "n"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "non_us_backslash"
+                    },
+                    "to": [
+                        {
+                            "key_code": "non_us_backslash"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "nonusbackslash"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "non_us_pound"
+                    },
+                    "to": [
+                        {
+                            "key_code": "non_us_pound"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "nonuspound"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "0"
+                    },
+                    "to": [
+                        {
+                            "key_code": "0"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "num0"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "1"
+                    },
+                    "to": [
+                        {
+                            "key_code": "1"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "num1"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "2"
+                    },
+                    "to": [
+                        {
+                            "key_code": "2"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "num2"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "3"
+                    },
+                    "to": [
+                        {
+                            "key_code": "3"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "num3"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "4"
+                    },
+                    "to": [
+                        {
+                            "key_code": "4"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "num4"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "5"
+                    },
+                    "to": [
+                        {
+                            "key_code": "5"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "num5"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "6"
+                    },
+                    "to": [
+                        {
+                            "key_code": "6"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "num6"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "7"
+                    },
+                    "to": [
+                        {
+                            "key_code": "7"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "num7"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "8"
+                    },
+                    "to": [
+                        {
+                            "key_code": "8"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "num8"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "9"
+                    },
+                    "to": [
+                        {
+                            "key_code": "9"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "num9"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "o"
+                    },
+                    "to": [
+                        {
+                            "key_code": "o"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "o"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "open_bracket"
+                    },
+                    "to": [
+                        {
+                            "key_code": "open_bracket"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "openbracket"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "oper"
+                    },
+                    "to": [
+                        {
+                            "key_code": "oper"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "oper"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "out"
+                    },
+                    "to": [
+                        {
+                            "key_code": "out"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "out"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "p"
+                    },
+                    "to": [
+                        {
+                            "key_code": "p"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "p"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "page_down"
+                    },
+                    "to": [
+                        {
+                            "key_code": "page_down"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "pagedown"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "page_up"
+                    },
+                    "to": [
+                        {
+                            "key_code": "page_up"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "pageup"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "period"
+                    },
+                    "to": [
+                        {
+                            "key_code": "period"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "period"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "play_or_pause"
+                    },
+                    "to": [
+                        {
+                            "key_code": "play_or_pause"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "playorpause"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "prior"
+                    },
+                    "to": [
+                        {
+                            "key_code": "prior"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "prior"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "q"
+                    },
+                    "to": [
+                        {
+                            "key_code": "q"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "q"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "quote"
+                    },
+                    "to": [
+                        {
+                            "key_code": "quote"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "quote"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "r"
+                    },
+                    "to": [
+                        {
+                            "key_code": "r"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "r"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "return"
+                    },
+                    "to": [
+                        {
+                            "key_code": "return"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "return"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "return_or_enter"
+                    },
+                    "to": [
+                        {
+                            "key_code": "return_or_enter"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "returnorenter"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "rewind"
+                    },
+                    "to": [
+                        {
+                            "key_code": "rewind"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "rewind"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "right_arrow"
+                    },
+                    "to": [
+                        {
+                            "key_code": "right_arrow"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "rightarrow"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "s"
+                    },
+                    "to": [
+                        {
+                            "key_code": "s"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "s"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "semicolon"
+                    },
+                    "to": [
+                        {
+                            "key_code": "semicolon"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "semicolon"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "separator"
+                    },
+                    "to": [
+                        {
+                            "key_code": "separator"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "separator"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "slash"
+                    },
+                    "to": [
+                        {
+                            "key_code": "slash"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "slash"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "spacebar"
+                    },
+                    "to": [
+                        {
+                            "key_code": "spacebar"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "spacebar"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "sys_req_or_attention"
+                    },
+                    "to": [
+                        {
+                            "key_code": "sys_req_or_attention"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "sysreqorattention"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "t"
+                    },
+                    "to": [
+                        {
+                            "key_code": "t"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "t"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "tab"
+                    },
+                    "to": [
+                        {
+                            "key_code": "tab"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "tab"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "u"
+                    },
+                    "to": [
+                        {
+                            "key_code": "u"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "u"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "up_arrow"
+                    },
+                    "to": [
+                        {
+                            "key_code": "up_arrow"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "uparrow"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "v"
+                    },
+                    "to": [
+                        {
+                            "key_code": "v"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "v"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "vk_consumer_brightness_down"
+                    },
+                    "to": [
+                        {
+                            "key_code": "vk_consumer_brightness_down"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "vkconsumerbrightnessdown"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "vk_consumer_brightness_up"
+                    },
+                    "to": [
+                        {
+                            "key_code": "vk_consumer_brightness_up"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "vkconsumerbrightnessup"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "vk_consumer_illumination_down"
+                    },
+                    "to": [
+                        {
+                            "key_code": "vk_consumer_illumination_down"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "vkconsumerilluminationdown"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "vk_consumer_illumination_up"
+                    },
+                    "to": [
+                        {
+                            "key_code": "vk_consumer_illumination_up"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "vkconsumerilluminationup"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "vk_consumer_next"
+                    },
+                    "to": [
+                        {
+                            "key_code": "vk_consumer_next"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "vkconsumernext"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "vk_consumer_play"
+                    },
+                    "to": [
+                        {
+                            "key_code": "vk_consumer_play"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "vkconsumerplay"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "vk_consumer_previous"
+                    },
+                    "to": [
+                        {
+                            "key_code": "vk_consumer_previous"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "vkconsumerprevious"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "vk_dashboard"
+                    },
+                    "to": [
+                        {
+                            "key_code": "vk_dashboard"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "vkdashboard"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "vk_launchpad"
+                    },
+                    "to": [
+                        {
+                            "key_code": "vk_launchpad"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "vklaunchpad"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "vk_mission_control"
+                    },
+                    "to": [
+                        {
+                            "key_code": "vk_mission_control"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "vkmissioncontrol"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "volume_decrement"
+                    },
+                    "to": [
+                        {
+                            "key_code": "volume_decrement"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "volumedecrement"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "volume_increment"
+                    },
+                    "to": [
+                        {
+                            "key_code": "volume_increment"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "volumeincrement"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "w"
+                    },
+                    "to": [
+                        {
+                            "key_code": "w"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "w"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "x"
+                    },
+                    "to": [
+                        {
+                            "key_code": "x"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "x"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "y"
+                    },
+                    "to": [
+                        {
+                            "key_code": "y"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "y"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "z"
+                    },
+                    "to": [
+                        {
+                            "key_code": "z"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "z"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "hyper"
+                    },
+                    "to": [
+                        {
+                            "key_code": "hyper"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKeyCode",
+                                "value": "hyper"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
