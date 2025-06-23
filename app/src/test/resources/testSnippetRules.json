@@ -11,8 +11,8 @@
       "replacement": "intellij"
     },
     {
-      "description": "snippets - fb -> foo@bar.com",
-      "keys": "cx",
+      "description": "snippets - fab -> foo@bar.com",
+      "keys": "fab",
       "replacement": "foo@bar.com"
     }
   ]

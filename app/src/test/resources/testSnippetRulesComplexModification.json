@@ -250,51 +250,51 @@
             ]
         },
         {
-            "description": "snippets - fb -> foo@bar.com",
+            "description": "snippets - fab -> foo@bar.com",
             "manipulators": [
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "c"
+                        "key_code": "f"
                     },
                     "to": [
                         {
-                            "key_code": "c"
+                            "key_code": "f"
                         },
                         {
                             "set_variable": {
                                 "name": "snippetKeys",
-                                "value": "c"
+                                "value": "f"
                             }
                         },
                         {
                             "set_variable": {
                                 "name": "lastKey",
-                                "value": "c"
+                                "value": "f"
                             }
                         }
                     ],
-                    "description": "cx"
+                    "description": "fab"
                 },
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "x"
+                        "key_code": "a"
                     },
                     "to": [
                         {
-                            "key_code": "x"
+                            "key_code": "a"
                         },
                         {
                             "set_variable": {
                                 "name": "snippetKeys",
-                                "value": "cx"
+                                "value": "fa"
                             }
                         },
                         {
                             "set_variable": {
                                 "name": "lastKey",
-                                "value": "x"
+                                "value": "a"
                             }
                         }
                     ],
@@ -302,15 +302,51 @@
                         {
                             "type": "variable_if",
                             "name": "lastKey",
-                            "value": "c"
+                            "value": "f"
                         },
                         {
                             "type": "variable_if",
                             "name": "snippetKeys",
-                            "value": "c"
+                            "value": "f"
                         }
                     ],
-                    "description": "cx"
+                    "description": "fab"
+                },
+                {
+                    "type": "basic",
+                    "from": {
+                        "key_code": "b"
+                    },
+                    "to": [
+                        {
+                            "key_code": "b"
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": "fab"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "lastKey",
+                                "value": "b"
+                            }
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_if",
+                            "name": "lastKey",
+                            "value": "a"
+                        },
+                        {
+                            "type": "variable_if",
+                            "name": "snippetKeys",
+                            "value": "fa"
+                        }
+                    ],
+                    "description": "fab"
                 },
                 {
                     "type": "basic",
@@ -323,6 +359,9 @@
                                 "name": "snippetKeys",
                                 "value": 0
                             }
+                        },
+                        {
+                            "key_code": "delete_or_backspace"
                         },
                         {
                             "key_code": "delete_or_backspace"
@@ -371,15 +410,35 @@
                         {
                             "type": "variable_if",
                             "name": "lastKey",
-                            "value": "x"
+                            "value": "b"
                         },
                         {
                             "type": "variable_if",
                             "name": "snippetKeys",
+                            "value": "fab"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKey",
+                            "value": "x"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "snippetKeys",
+                            "value": "cx"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKey",
+                            "value": "x"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "snippetKeys",
                             "value": "cx"
                         }
                     ],
-                    "description": "cx"
+                    "description": "fab"
                 }
             ]
         },
