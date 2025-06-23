@@ -1,4 +1,5 @@
 package se.tp21.karabiner.utils
+
 import se.tp21.karabiner.snippets.rules.SnippetRules
 import sh.kau.karabiner.*
 
@@ -13,37 +14,34 @@ fun toKarabinerRules(rules: SnippetRules): List<KarabinerRule> =
 
 private fun Char.toTo(): To =
     maybeKeyCode()
-        ?.let { To(it) }
+        ?.let(::To)
         ?: this.toOtherTo()
+        ?: error("Unknown to: $this")
 
-private fun Char.toOtherTo(): To =
-    when {
-        this == ' ' -> To(KeyCode.Spacebar)
-        this == '@' -> To(KeyCode.Num2, modifiers = listOf(ModifierKeyCode.LeftShift))
-        this == '+' -> To(KeyCode.EqualSign, modifiers = listOf(ModifierKeyCode.LeftShift))
-        this == '.' -> To(KeyCode.Period)
-        this in "1234567890" ->
-            when(this) {
-                '1' -> KeyCode.Num1
-                '2' -> KeyCode.Num2
-                '3' -> KeyCode.Num3
-                '4' -> KeyCode.Num4
-                '5' -> KeyCode.Num5
-                '6' -> KeyCode.Num6
-                '7' -> KeyCode.Num7
-                '8' -> KeyCode.Num8
-                '9' -> KeyCode.Num9
-                '0' -> KeyCode.Num0
-                else -> TODO()
-            }.let(::To)
-        else -> TODO()
+private fun Char.toOtherTo(): To? =
+    when (this) {
+        ' ' -> To(KeyCode.Spacebar)
+        '@' -> To(KeyCode.Num2, modifiers = listOf(ModifierKeyCode.LeftShift))
+        '+' -> To(KeyCode.EqualSign, modifiers = listOf(ModifierKeyCode.LeftShift))
+        '.' -> To(KeyCode.Period)
+        '1' -> To(KeyCode.Num1)
+        '2' -> To(KeyCode.Num2)
+        '3' -> To(KeyCode.Num3)
+        '4' -> To(KeyCode.Num4)
+        '5' -> To(KeyCode.Num5)
+        '6' -> To(KeyCode.Num6)
+        '7' -> To(KeyCode.Num7)
+        '8' -> To(KeyCode.Num8)
+        '9' -> To(KeyCode.Num9)
+        '0' -> To(KeyCode.Num0)
+        else -> null
     }
 
 private fun Char.toKeyCode(): KeyCode =
     maybeKeyCode()
-      ?: error("Unknown KeyCode: ${this}")
+        ?: error("Unknown KeyCode: $this")
 
 private fun Char.maybeKeyCode(): KeyCode? =
     KeyCode::class.sealedSubclasses
         .singleOrNull { it.simpleName.equals(this.toString(), ignoreCase = true) }
-        ?.let { it.objectInstance }
+        ?.objectInstance
