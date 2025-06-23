@@ -1,22 +1,22 @@
 package se.tp21.karabiner.snippets.base
 
-import se.tp21.karabiner.utils.setLastKeyCodeVariable
+import se.tp21.karabiner.utils.VariableKeys.snippetKeys
+import se.tp21.karabiner.utils.setLastKey
 import sh.kau.karabiner.*
 import kotlin.reflect.KClass
 
-fun lastKey(): List<KarabinerRule> {
-    return listOf(
+fun fallThrough(): List<KarabinerRule> =
+    listOf(
         karabinerRule(
-            description = "snippets - last key",
-            manipulators = (lastKeyManipulatorsFor(keyCodesFor(KeyCode::class))).toTypedArray()
+            description = "snippets - fall through",
+            manipulators = (fallThroughManipulatorsFor(keyCodesFor(KeyCode::class))).toTypedArray()
         )
     )
-}
 
 private fun <T: KeyCode> keyCodesFor(kClass: KClass<T>) =
     kClass.sealedSubclasses.mapNotNull { it.objectInstance }
 
-private fun lastKeyManipulatorsFor(keyCodes: List<KeyCode>) =
+private fun fallThroughManipulatorsFor(keyCodes: List<KeyCode>) =
     keyCodes.map { keyCode ->
         Manipulator(
             from = From(keyCode),
@@ -25,8 +25,8 @@ private fun lastKeyManipulatorsFor(keyCodes: List<KeyCode>) =
                     keyCode = keyCode,
                 ),
                 To(
-                    setVariable = setLastKeyCodeVariable(keyCode)
-                )
-            )
+                    setVariable = setLastKey(keyCode)
+                ),
+            ) + unsetVar(snippetKeys)
         )
     }.toList()
