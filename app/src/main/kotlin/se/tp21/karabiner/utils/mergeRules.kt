@@ -11,23 +11,20 @@ fun mergeRules(from: List<KarabinerRule>): List<KarabinerRule> {
 
     val duplicatesNegated = duplicatesNegated(manipulators)
 
-    return from.map {
+    return from.map { rule ->
         KarabinerRule(
-            description = it.description,
+            description = rule.description,
             manipulators =
-                it.manipulators
-                    ?.map { manipulator ->
-                        duplicatesNegated.match(manipulator) ?: manipulator
-                    }
+                rule.manipulators?.map { manipulator ->
+                    duplicatesNegated.singleOrNull { it.matches(manipulator) } ?: manipulator
+                }
         )
     }
 }
 
-private fun List<Manipulator>.match(manipulator: Manipulator): Manipulator? =
-    this.singleOrNull {
-        it.from.keyCode == manipulator.from.keyCode
-            && it.description == manipulator.description
-    }
+private fun Manipulator.matches(other: Manipulator): Boolean =
+    this.from.keyCode == other.from.keyCode
+        && this.description == other.description
 
 fun duplicatesNegated(from: List<Manipulator>): List<Manipulator> =
     duplicateReplacementManipulators(from)
