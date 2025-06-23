@@ -26,7 +26,20 @@
                                 "value": "c"
                             }
                         }
-                    ]
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "s"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "jsc",
+                            "value": "js"
+                        }
+                    ],
+                    "description": "cx"
                 },
                 {
                     "type": "basic",
@@ -61,7 +74,8 @@
                             "name": "cx",
                             "value": "c"
                         }
-                    ]
+                    ],
+                    "description": "cx"
                 },
                 {
                     "type": "basic",
@@ -119,8 +133,49 @@
                             "type": "variable_if",
                             "name": "cx",
                             "value": "cx"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "j"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "ij",
+                            "value": "ij"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "c"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "jsc",
+                            "value": "jsc"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "l"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "kl",
+                            "value": "kl"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "g"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "tpg",
+                            "value": "tpg"
                         }
-                    ]
+                    ],
+                    "description": "cx"
                 }
             ]
         },
@@ -148,7 +203,8 @@
                                 "value": "i"
                             }
                         }
-                    ]
+                    ],
+                    "description": "ij"
                 },
                 {
                     "type": "basic",
@@ -183,7 +239,8 @@
                             "name": "ij",
                             "value": "i"
                         }
-                    ]
+                    ],
+                    "description": "ij"
                 },
                 {
                     "type": "basic",
@@ -238,56 +295,110 @@
                             "type": "variable_if",
                             "name": "ij",
                             "value": "ij"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "x"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "cx",
+                            "value": "cx"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "c"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "jsc",
+                            "value": "jsc"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "l"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "kl",
+                            "value": "kl"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "g"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "tpg",
+                            "value": "tpg"
                         }
-                    ]
+                    ],
+                    "description": "ij"
                 }
             ]
         },
         {
-            "description": "snippets - tpg -> javascript",
+            "description": "snippets - jsc -> javascript",
             "manipulators": [
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "t"
+                        "key_code": "j"
                     },
                     "to": [
                         {
-                            "key_code": "t"
+                            "key_code": "j"
                         },
                         {
                             "set_variable": {
-                                "name": "tpg",
-                                "value": "t"
+                                "name": "jsc",
+                                "value": "j"
                             }
                         },
                         {
                             "set_variable": {
                                 "name": "lastKeyCode",
-                                "value": "t"
+                                "value": "j"
                             }
                         }
-                    ]
+                    ],
+                    "conditions": [
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "i"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "ij",
+                            "value": "i"
+                        }
+                    ],
+                    "description": "jsc"
                 },
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "p"
+                        "key_code": "s"
                     },
                     "to": [
                         {
-                            "key_code": "p"
+                            "key_code": "s"
                         },
                         {
                             "set_variable": {
-                                "name": "tpg",
-                                "value": "tp"
+                                "name": "jsc",
+                                "value": "js"
                             }
                         },
                         {
                             "set_variable": {
                                 "name": "lastKeyCode",
-                                "value": "p"
+                                "value": "s"
                             }
                         }
                     ],
@@ -295,34 +406,35 @@
                         {
                             "type": "variable_if",
                             "name": "lastKeyCode",
-                            "value": "t"
+                            "value": "j"
                         },
                         {
                             "type": "variable_if",
-                            "name": "tpg",
-                            "value": "t"
+                            "name": "jsc",
+                            "value": "j"
                         }
-                    ]
+                    ],
+                    "description": "jsc"
                 },
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "g"
+                        "key_code": "c"
                     },
                     "to": [
                         {
-                            "key_code": "g"
+                            "key_code": "c"
                         },
                         {
                             "set_variable": {
-                                "name": "tpg",
-                                "value": "tpg"
+                                "name": "jsc",
+                                "value": "jsc"
                             }
                         },
                         {
                             "set_variable": {
                                 "name": "lastKeyCode",
-                                "value": "g"
+                                "value": "c"
                             }
                         }
                     ],
@@ -330,14 +442,15 @@
                         {
                             "type": "variable_if",
                             "name": "lastKeyCode",
-                            "value": "p"
+                            "value": "s"
                         },
                         {
                             "type": "variable_if",
-                            "name": "tpg",
-                            "value": "tp"
+                            "name": "jsc",
+                            "value": "js"
                         }
-                    ]
+                    ],
+                    "description": "jsc"
                 },
                 {
                     "type": "basic",
@@ -347,7 +460,7 @@
                     "to": [
                         {
                             "set_variable": {
-                                "name": "tpg",
+                                "name": "jsc",
                                 "value": 0
                             }
                         },
@@ -395,14 +508,55 @@
                         {
                             "type": "variable_if",
                             "name": "lastKeyCode",
-                            "value": "g"
+                            "value": "c"
                         },
                         {
                             "type": "variable_if",
+                            "name": "jsc",
+                            "value": "jsc"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "x"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "cx",
+                            "value": "cx"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "j"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "ij",
+                            "value": "ij"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "l"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "kl",
+                            "value": "kl"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "g"
+                        },
+                        {
+                            "type": "variable_unless",
                             "name": "tpg",
                             "value": "tpg"
                         }
-                    ]
+                    ],
+                    "description": "jsc"
                 }
             ]
         },
@@ -430,7 +584,8 @@
                                 "value": "k"
                             }
                         }
-                    ]
+                    ],
+                    "description": "kl"
                 },
                 {
                     "type": "basic",
@@ -465,7 +620,8 @@
                             "name": "kl",
                             "value": "k"
                         }
-                    ]
+                    ],
+                    "description": "kl"
                 },
                 {
                     "type": "basic",
@@ -514,8 +670,49 @@
                             "type": "variable_if",
                             "name": "kl",
                             "value": "kl"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "x"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "cx",
+                            "value": "cx"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "j"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "ij",
+                            "value": "ij"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "c"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "jsc",
+                            "value": "jsc"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "g"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "tpg",
+                            "value": "tpg"
                         }
-                    ]
+                    ],
+                    "description": "kl"
                 }
             ]
         },
@@ -543,7 +740,8 @@
                                 "value": "t"
                             }
                         }
-                    ]
+                    ],
+                    "description": "tpg"
                 },
                 {
                     "type": "basic",
@@ -578,7 +776,8 @@
                             "name": "tpg",
                             "value": "t"
                         }
-                    ]
+                    ],
+                    "description": "tpg"
                 },
                 {
                     "type": "basic",
@@ -613,7 +812,8 @@
                             "name": "tpg",
                             "value": "tp"
                         }
-                    ]
+                    ],
+                    "description": "tpg"
                 },
                 {
                     "type": "basic",
@@ -704,8 +904,49 @@
                             "type": "variable_if",
                             "name": "tpg",
                             "value": "tpg"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "x"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "cx",
+                            "value": "cx"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "j"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "ij",
+                            "value": "ij"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "c"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "jsc",
+                            "value": "jsc"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKeyCode",
+                            "value": "l"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "kl",
+                            "value": "kl"
                         }
-                    ]
+                    ],
+                    "description": "tpg"
                 }
             ]
         },
