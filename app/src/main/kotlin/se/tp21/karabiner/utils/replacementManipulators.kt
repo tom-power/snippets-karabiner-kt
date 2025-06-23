@@ -6,19 +6,20 @@ import sh.kau.karabiner.*
 import java.util.*
 
 fun replacementManipulators(keyCodes: List<KeyCode>, replacement: List<To>): List<Manipulator> {
-    val variableKey = keyCodes.joinToString("") { it.name.lowercase()  }
-    var lastVariableValue = ""
+    val variableName = keyCodes.joinToString("") { it.name.lowercase()  }
+    var lastVariableValue: String
 
     val first = keyCodes.first().let { keyCode ->
-        val variableValue = keyCode.name.first().lowercase()
+        val keyCodeName = keyCode.name.first().lowercase()
         Manipulator(
             from = From(keyCode),
             to = setVariableAndLast(
                 keyCode = keyCode,
-                variableKey = variableKey,
-                variableValue = variableValue,
-            )
-        ).also { lastVariableValue = variableValue }
+                variableName = variableName,
+                variableValue = keyCodeName,
+            ),
+            description = variableName,
+        ).also { lastVariableValue = keyCodeName }
     }
 
     val firstAndMiddle =
@@ -30,14 +31,15 @@ fun replacementManipulators(keyCodes: List<KeyCode>, replacement: List<To>): Lis
                     from = From(keyCode),
                     conditions = ifVariableAndLastConditions(
                         last = last,
-                        variableKey = variableKey,
+                        variableKey = variableName,
                         variableValue = lastVariableValue,
                     ),
                     to = setVariableAndLast(
                         keyCode = keyCode,
-                        variableKey = variableKey,
+                        variableName = variableName,
                         variableValue = thisVariableValue,
-                    )
+                    ),
+                    description = variableName,
                 )
             ).also { lastVariableValue = thisVariableValue }
         }
@@ -46,10 +48,11 @@ fun replacementManipulators(keyCodes: List<KeyCode>, replacement: List<To>): Lis
         from = From(KeyCode.Spacebar),
         conditions = ifVariableAndLastConditions(
             last = keyCodes.last(),
-            variableKey = variableKey,
+            variableKey = variableName,
             variableValue = lastVariableValue,
         ),
-        to = unsetVar(variableKey) + keyCodes.map { delete } + replacement
+        to = unsetVar(variableName) + keyCodes.map { delete } + replacement,
+        description = variableName,
     )
 
     return firstAndMiddle + listOf(last)
@@ -58,12 +61,12 @@ fun replacementManipulators(keyCodes: List<KeyCode>, replacement: List<To>): Lis
 
 private fun setVariableAndLast(
     keyCode: KeyCode,
-    variableKey: String,
+    variableName: String,
     variableValue: String,
 ): List<To> =
     listOf(
         To(keyCode = keyCode),
-        To(setVariable = setVariable(variableKey, variableValue)),
+        To(setVariable = setVariable(variableName, variableValue)),
         To(setVariable = setLastKeyCodeVariable(keyCode))
     )
 
@@ -79,9 +82,13 @@ private fun ifVariableAndLastConditions(
 
 fun setLastKeyCodeVariable(keyCode: KeyCode) =
     setVariable(
-        key = VariableKeys.lastKeyCode,
+        name = VariableKeys.lastKeyCode,
         value = keyCode.name.lowercase(Locale.getDefault())
     )
 
-private fun setVariable(key: String, value: String) = SetVariable(key, JsonPrimitive(value))
+private fun setVariable(name: String, value: String) =
+    SetVariable(
+        name = name,
+        value = JsonPrimitive(value)
+    )
 
