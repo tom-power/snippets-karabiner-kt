@@ -1,6 +1,6 @@
 package se.tp21.karabiner
 
-import se.tp21.karabiner.utils.jsonEncoder
+import sh.kau.karabiner.jsonEncoder
 import java.io.File
 
 fun main() {

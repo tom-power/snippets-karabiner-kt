@@ -1,7 +1,7 @@
 package se.tp21.karabiner
 
 import org.junit.jupiter.api.Test
-import se.tp21.karabiner.utils.jsonEncoder
+import sh.kau.karabiner.jsonEncoder
 
 class SnippetRulesTest {
 
