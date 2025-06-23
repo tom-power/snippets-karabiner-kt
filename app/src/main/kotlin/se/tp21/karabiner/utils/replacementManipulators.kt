@@ -1,89 +1,97 @@
 package se.tp21.karabiner.utils
 
 import kotlinx.serialization.json.JsonPrimitive
-import se.tp21.karabiner.utils.ConstTo.delete
+import se.tp21.karabiner.utils.Const.delete
+import se.tp21.karabiner.utils.VariableKeys.lastKey
+import se.tp21.karabiner.utils.VariableKeys.snippetKeys
 import sh.kau.karabiner.*
 import java.util.*
 
 fun replacementManipulators(keyCodes: List<KeyCode>, replacement: List<To>): List<Manipulator> {
-    val variableName = keyCodes.joinToString("") { it.name.lowercase()  }
-    var lastVariableValue: String
+    val description = keyCodes.joinToString("") { it.name.lowercase()  }
+    var lastSnippet: String
 
     val first = keyCodes.first().let { keyCode ->
         val keyCodeName = keyCode.name.first().lowercase()
         Manipulator(
             from = From(keyCode),
-            to = setVariableAndLast(
-                keyCode = keyCode,
-                variableName = variableName,
-                variableValue = keyCodeName,
+            to = setSnippetKeysAndLastKey(
+                lastKey = keyCode,
+                snippetKeys = keyCodeName,
             ),
-            description = variableName,
-        ).also { lastVariableValue = keyCodeName }
+            description = description,
+        ).also { lastSnippet = keyCodeName }
     }
 
     val firstAndMiddle =
         keyCodes.drop(1).fold(listOf(first)) { acc, keyCode ->
             val last = acc.last().from.keyCode!!
-            val thisVariableValue = lastVariableValue + keyCode.name.lowercase()
+            val thisSnippetKeys = lastSnippet + keyCode.name.lowercase()
             acc + listOf(
                 Manipulator(
                     from = From(keyCode),
-                    conditions = ifVariableAndLastConditions(
-                        last = last,
-                        variableKey = variableName,
-                        variableValue = lastVariableValue,
+                    conditions = ifSnippetKeysAndLastKey(
+                        lastKey = last,
+                        snippetKeys = lastSnippet,
                     ),
-                    to = setVariableAndLast(
-                        keyCode = keyCode,
-                        variableName = variableName,
-                        variableValue = thisVariableValue,
+                    to = setSnippetKeysAndLastKey(
+                        lastKey = keyCode,
+                        snippetKeys = thisSnippetKeys,
                     ),
-                    description = variableName,
+                    description = description,
                 )
-            ).also { lastVariableValue = thisVariableValue }
+            ).also { lastSnippet = thisSnippetKeys }
         }
 
     val last = Manipulator(
         from = From(KeyCode.Spacebar),
-        conditions = ifVariableAndLastConditions(
-            last = keyCodes.last(),
-            variableKey = variableName,
-            variableValue = lastVariableValue,
+        conditions = ifSnippetKeysAndLastKey(
+            lastKey = keyCodes.last(),
+            snippetKeys = lastSnippet,
         ),
-        to = unsetVar(variableName) + keyCodes.map { delete } + replacement,
-        description = variableName,
+        to = unsetVar(snippetKeys) + keyCodes.map { delete } + replacement,
+        description = description,
     )
 
     return firstAndMiddle + listOf(last)
 
 }
 
-private fun setVariableAndLast(
-    keyCode: KeyCode,
-    variableName: String,
-    variableValue: String,
+private fun setSnippetKeysAndLastKey(
+    lastKey: KeyCode,
+    snippetKeys: String,
 ): List<To> =
     listOf(
-        To(keyCode = keyCode),
-        To(setVariable = setVariable(variableName, variableValue)),
-        To(setVariable = setLastKeyCodeVariable(keyCode))
+        To(keyCode = lastKey),
+        To(setVariable = setSnippetKeys(snippetKeys)),
+        To(setVariable = setLastKey(lastKey))
     )
 
-private fun ifVariableAndLastConditions(
-    last: KeyCode,
-    variableKey: String,
-    variableValue: String,
+private fun ifSnippetKeysAndLastKey(
+    lastKey: KeyCode,
+    snippetKeys: String,
 ): List<Condition.VariableIfCondition> =
     listOf(
-        Condition.VariableIfCondition(VariableKeys.lastKeyCode, JsonPrimitive(last.name.lowercase(Locale.getDefault()))),
-        Condition.VariableIfCondition(variableKey, JsonPrimitive(variableValue)),
+        Condition.VariableIfCondition(
+            name = VariableKeys.lastKey,
+            value = JsonPrimitive(lastKey.name.lowercase(Locale.getDefault()))
+        ),
+        Condition.VariableIfCondition(
+            name = VariableKeys.snippetKeys,
+            value = JsonPrimitive(snippetKeys)
+        ),
     )
 
-fun setLastKeyCodeVariable(keyCode: KeyCode) =
+fun setLastKey(keyCode: KeyCode) =
     setVariable(
-        name = VariableKeys.lastKeyCode,
+        name = lastKey,
         value = keyCode.name.lowercase(Locale.getDefault())
+    )
+
+private fun setSnippetKeys(value: String) =
+    setVariable(
+        name = snippetKeys,
+        value = value
     )
 
 private fun setVariable(name: String, value: String) =

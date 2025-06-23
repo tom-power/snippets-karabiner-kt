@@ -16,13 +16,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "cx",
+                                "name": "snippetKeys",
                                 "value": "c"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "c"
                             }
                         }
@@ -30,12 +30,12 @@
                     "conditions": [
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "s"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "jsc",
+                            "name": "snippetKeys",
                             "value": "js"
                         }
                     ],
@@ -52,13 +52,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "cx",
+                                "name": "snippetKeys",
                                 "value": "cx"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "x"
                             }
                         }
@@ -66,12 +66,12 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "c"
                         },
                         {
                             "type": "variable_if",
-                            "name": "cx",
+                            "name": "snippetKeys",
                             "value": "c"
                         }
                     ],
@@ -85,7 +85,7 @@
                     "to": [
                         {
                             "set_variable": {
-                                "name": "cx",
+                                "name": "snippetKeys",
                                 "value": 0
                             }
                         },
@@ -126,52 +126,52 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "x"
                         },
                         {
                             "type": "variable_if",
-                            "name": "cx",
+                            "name": "snippetKeys",
                             "value": "cx"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "j"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "ij",
+                            "name": "snippetKeys",
                             "value": "ij"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "c"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "jsc",
+                            "name": "snippetKeys",
                             "value": "jsc"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "l"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "kl",
+                            "name": "snippetKeys",
                             "value": "kl"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "g"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "tpg",
+                            "name": "snippetKeys",
                             "value": "tpg"
                         }
                     ],
@@ -193,13 +193,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "ij",
+                                "name": "snippetKeys",
                                 "value": "i"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "i"
                             }
                         }
@@ -217,13 +217,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "ij",
+                                "name": "snippetKeys",
                                 "value": "ij"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "j"
                             }
                         }
@@ -231,12 +231,12 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "i"
                         },
                         {
                             "type": "variable_if",
-                            "name": "ij",
+                            "name": "snippetKeys",
                             "value": "i"
                         }
                     ],
@@ -250,7 +250,7 @@
                     "to": [
                         {
                             "set_variable": {
-                                "name": "ij",
+                                "name": "snippetKeys",
                                 "value": 0
                             }
                         },
@@ -288,52 +288,52 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "j"
                         },
                         {
                             "type": "variable_if",
-                            "name": "ij",
+                            "name": "snippetKeys",
                             "value": "ij"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "x"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "cx",
+                            "name": "snippetKeys",
                             "value": "cx"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "c"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "jsc",
+                            "name": "snippetKeys",
                             "value": "jsc"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "l"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "kl",
+                            "name": "snippetKeys",
                             "value": "kl"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "g"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "tpg",
+                            "name": "snippetKeys",
                             "value": "tpg"
                         }
                     ],
@@ -355,13 +355,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "jsc",
+                                "name": "snippetKeys",
                                 "value": "j"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "j"
                             }
                         }
@@ -369,12 +369,12 @@
                     "conditions": [
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "i"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "ij",
+                            "name": "snippetKeys",
                             "value": "i"
                         }
                     ],
@@ -391,13 +391,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "jsc",
+                                "name": "snippetKeys",
                                 "value": "js"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "s"
                             }
                         }
@@ -405,12 +405,12 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "j"
                         },
                         {
                             "type": "variable_if",
-                            "name": "jsc",
+                            "name": "snippetKeys",
                             "value": "j"
                         }
                     ],
@@ -427,13 +427,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "jsc",
+                                "name": "snippetKeys",
                                 "value": "jsc"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "c"
                             }
                         }
@@ -441,12 +441,12 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "s"
                         },
                         {
                             "type": "variable_if",
-                            "name": "jsc",
+                            "name": "snippetKeys",
                             "value": "js"
                         }
                     ],
@@ -460,7 +460,7 @@
                     "to": [
                         {
                             "set_variable": {
-                                "name": "jsc",
+                                "name": "snippetKeys",
                                 "value": 0
                             }
                         },
@@ -507,52 +507,52 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "c"
                         },
                         {
                             "type": "variable_if",
-                            "name": "jsc",
+                            "name": "snippetKeys",
                             "value": "jsc"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "x"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "cx",
+                            "name": "snippetKeys",
                             "value": "cx"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "j"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "ij",
+                            "name": "snippetKeys",
                             "value": "ij"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "l"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "kl",
+                            "name": "snippetKeys",
                             "value": "kl"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "g"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "tpg",
+                            "name": "snippetKeys",
                             "value": "tpg"
                         }
                     ],
@@ -574,13 +574,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "kl",
+                                "name": "snippetKeys",
                                 "value": "k"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "k"
                             }
                         }
@@ -598,13 +598,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "kl",
+                                "name": "snippetKeys",
                                 "value": "kl"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "l"
                             }
                         }
@@ -612,12 +612,12 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "k"
                         },
                         {
                             "type": "variable_if",
-                            "name": "kl",
+                            "name": "snippetKeys",
                             "value": "k"
                         }
                     ],
@@ -631,7 +631,7 @@
                     "to": [
                         {
                             "set_variable": {
-                                "name": "kl",
+                                "name": "snippetKeys",
                                 "value": 0
                             }
                         },
@@ -663,52 +663,52 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "l"
                         },
                         {
                             "type": "variable_if",
-                            "name": "kl",
+                            "name": "snippetKeys",
                             "value": "kl"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "x"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "cx",
+                            "name": "snippetKeys",
                             "value": "cx"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "j"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "ij",
+                            "name": "snippetKeys",
                             "value": "ij"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "c"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "jsc",
+                            "name": "snippetKeys",
                             "value": "jsc"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "g"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "tpg",
+                            "name": "snippetKeys",
                             "value": "tpg"
                         }
                     ],
@@ -730,13 +730,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "tpg",
+                                "name": "snippetKeys",
                                 "value": "t"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "t"
                             }
                         }
@@ -754,13 +754,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "tpg",
+                                "name": "snippetKeys",
                                 "value": "tp"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "p"
                             }
                         }
@@ -768,12 +768,12 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "t"
                         },
                         {
                             "type": "variable_if",
-                            "name": "tpg",
+                            "name": "snippetKeys",
                             "value": "t"
                         }
                     ],
@@ -790,13 +790,13 @@
                         },
                         {
                             "set_variable": {
-                                "name": "tpg",
+                                "name": "snippetKeys",
                                 "value": "tpg"
                             }
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "g"
                             }
                         }
@@ -804,12 +804,12 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "p"
                         },
                         {
                             "type": "variable_if",
-                            "name": "tpg",
+                            "name": "snippetKeys",
                             "value": "tp"
                         }
                     ],
@@ -823,7 +823,7 @@
                     "to": [
                         {
                             "set_variable": {
-                                "name": "tpg",
+                                "name": "snippetKeys",
                                 "value": 0
                             }
                         },
@@ -897,52 +897,52 @@
                     "conditions": [
                         {
                             "type": "variable_if",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "g"
                         },
                         {
                             "type": "variable_if",
-                            "name": "tpg",
+                            "name": "snippetKeys",
                             "value": "tpg"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "x"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "cx",
+                            "name": "snippetKeys",
                             "value": "cx"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "j"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "ij",
+                            "name": "snippetKeys",
                             "value": "ij"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "c"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "jsc",
+                            "name": "snippetKeys",
                             "value": "jsc"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "lastKeyCode",
+                            "name": "lastKey",
                             "value": "l"
                         },
                         {
                             "type": "variable_unless",
-                            "name": "kl",
+                            "name": "snippetKeys",
                             "value": "kl"
                         }
                     ],
@@ -951,7 +951,7 @@
             ]
         },
         {
-            "description": "snippets - last key",
+            "description": "snippets - fall through",
             "manipulators": [
                 {
                     "type": "basic",
@@ -964,8 +964,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "a"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -981,8 +987,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "alternateerase"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -998,8 +1010,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "appledisplaybrightnessdecrement"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1015,8 +1033,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "appledisplaybrightnessincrement"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1032,8 +1056,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "appletopcasedisplaybrightnessdecrement"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1049,8 +1079,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "appletopcasedisplaybrightnessincrement"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1066,8 +1102,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "b"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1083,8 +1125,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "backslash"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1100,8 +1148,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "c"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1117,8 +1171,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "cancel"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1134,8 +1194,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "capslock"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1151,8 +1217,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "clear"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1168,8 +1240,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "clearoragain"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1185,8 +1263,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "closebracket"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1202,8 +1286,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "comma"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1219,8 +1309,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "crselorprops"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1236,8 +1332,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "d"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1253,8 +1355,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "dashboard"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1270,8 +1378,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "deleteforward"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1287,8 +1401,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "deleteorbackspace"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1304,8 +1424,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "displaybrightnessdecrement"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1321,8 +1447,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "displaybrightnessincrement"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1338,8 +1470,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "downarrow"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1355,8 +1493,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "e"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1372,8 +1516,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "eject"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1389,8 +1539,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "end"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1406,8 +1562,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "equalsign"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1423,8 +1585,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "escape"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1440,8 +1608,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "exsel"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1457,8 +1631,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1474,8 +1654,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f1"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1491,8 +1677,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f10"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1508,8 +1700,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f11"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1525,8 +1723,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f12"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1542,8 +1746,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f13"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1559,8 +1769,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f14"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1576,8 +1792,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f15"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1593,8 +1815,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f16"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1610,8 +1838,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f17"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1627,8 +1861,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f18"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1644,8 +1884,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f19"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1661,8 +1907,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f2"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1678,8 +1930,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f20"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1695,8 +1953,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f21"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1712,8 +1976,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f22"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1729,8 +1999,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f23"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1746,8 +2022,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f24"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1763,8 +2045,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f3"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1780,8 +2068,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f4"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1797,8 +2091,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f5"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1814,8 +2114,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f6"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1831,8 +2137,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f7"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1848,8 +2160,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f8"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1865,8 +2183,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "f9"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1882,8 +2206,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "fastforward"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1899,8 +2229,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "g"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1916,8 +2252,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "graveaccentandtilde"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1933,8 +2275,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "h"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1950,8 +2298,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "home"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1967,8 +2321,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "hyphen"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -1984,8 +2344,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "i"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2001,8 +2367,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "illuminationdecrement"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2018,8 +2390,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "illuminationincrement"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2035,8 +2413,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "j"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2052,8 +2436,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "k"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2069,8 +2459,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypad0"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2086,8 +2482,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypad1"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2103,8 +2505,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypad2"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2120,8 +2528,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypad3"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2137,8 +2551,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypad4"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2154,8 +2574,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypad5"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2171,8 +2597,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypad6"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2188,8 +2620,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypad7"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2205,8 +2643,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypad8"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2222,8 +2666,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypad9"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2239,8 +2689,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypadasterisk"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2256,8 +2712,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypadcomma"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2273,8 +2735,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypadenter"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2290,8 +2758,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypadequalsign"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2307,8 +2781,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypadequalsignas400"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2324,8 +2804,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypadhyphen"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2341,8 +2827,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypadnumlock"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2358,8 +2850,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypadperiod"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2375,8 +2873,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypadplus"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2392,8 +2896,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "keypadslash"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2409,8 +2919,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "l"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2426,8 +2942,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "launchpad"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2443,8 +2965,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "leftarrow"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2460,8 +2988,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "lockingcapslock"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2477,8 +3011,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "lockingnumlock"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2494,8 +3034,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "lockingscrolllock"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2511,8 +3057,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "m"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2528,8 +3080,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "missioncontrol"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2545,8 +3103,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "mute"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2562,8 +3126,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "n"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2579,8 +3149,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "nonusbackslash"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2596,8 +3172,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "nonuspound"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2613,8 +3195,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "num0"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2630,8 +3218,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "num1"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2647,8 +3241,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "num2"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2664,8 +3264,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "num3"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2681,8 +3287,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "num4"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2698,8 +3310,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "num5"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2715,8 +3333,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "num6"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2732,8 +3356,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "num7"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2749,8 +3379,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "num8"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2766,8 +3402,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "num9"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2783,8 +3425,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "o"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2800,8 +3448,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "openbracket"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2817,8 +3471,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "oper"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2834,8 +3494,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "out"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2851,8 +3517,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "p"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2868,8 +3540,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "pagedown"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2885,8 +3563,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "pageup"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2902,8 +3586,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "period"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2919,8 +3609,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "playorpause"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2936,8 +3632,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "prior"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2953,8 +3655,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "q"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2970,8 +3678,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "quote"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -2987,8 +3701,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "r"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3004,8 +3724,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "return"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3021,8 +3747,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "returnorenter"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3038,8 +3770,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "rewind"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3055,8 +3793,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "rightarrow"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3072,8 +3816,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "s"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3089,8 +3839,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "semicolon"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3106,8 +3862,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "separator"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3123,8 +3885,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "slash"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3140,8 +3908,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "spacebar"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3157,8 +3931,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "sysreqorattention"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3174,8 +3954,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "t"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3191,8 +3977,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "tab"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3208,8 +4000,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "u"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3225,8 +4023,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "uparrow"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3242,8 +4046,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "v"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3259,8 +4069,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "vkconsumerbrightnessdown"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3276,8 +4092,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "vkconsumerbrightnessup"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3293,8 +4115,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "vkconsumerilluminationdown"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3310,8 +4138,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "vkconsumerilluminationup"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3327,8 +4161,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "vkconsumernext"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3344,8 +4184,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "vkconsumerplay"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3361,8 +4207,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "vkconsumerprevious"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3378,8 +4230,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "vkdashboard"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3395,8 +4253,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "vklaunchpad"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3412,8 +4276,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "vkmissioncontrol"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3429,8 +4299,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "volumedecrement"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3446,8 +4322,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "volumeincrement"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3463,8 +4345,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "w"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3480,8 +4368,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "x"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3497,8 +4391,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "y"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3514,8 +4414,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "z"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]
@@ -3531,8 +4437,14 @@
                         },
                         {
                             "set_variable": {
-                                "name": "lastKeyCode",
+                                "name": "lastKey",
                                 "value": "hyper"
+                            }
+                        },
+                        {
+                            "set_variable": {
+                                "name": "snippetKeys",
+                                "value": 0
                             }
                         }
                     ]

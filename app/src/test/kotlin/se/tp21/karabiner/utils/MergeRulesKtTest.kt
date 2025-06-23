@@ -38,8 +38,8 @@ val expectedMergedRules = listOf(
                 ),
                 to = listOf(
                     To(keyCode = KeyCode.A),
-                    To(setVariable = SetVariable(name = "ab", value = JsonPrimitive("a"))),
-                    To(setVariable = SetVariable(name = "lastKeyCode", value = JsonPrimitive("a")))
+                    To(setVariable = SetVariable(name = "snippetKeys", value = JsonPrimitive("a"))),
+                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("a")))
                 ),
                 toIfAlone = null,
                 toAfterKeyUp = null,
@@ -58,16 +58,16 @@ val expectedMergedRules = listOf(
                 ),
                 to = listOf(
                     To(keyCode = KeyCode.B),
-                    To(setVariable = SetVariable(name = "ab", value = JsonPrimitive("ab"))),
-                    To(setVariable = SetVariable(name = "lastKeyCode", value = JsonPrimitive("b")))
+                    To(setVariable = SetVariable(name = "snippetKeys", value = JsonPrimitive("ab"))),
+                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("b")))
                 ),
                 toIfAlone = null,
                 toAfterKeyUp = null,
                 toIfHeldDown = null,
                 parameters = null,
                 conditions = listOf(
-                    VariableIfCondition(name = "lastKeyCode", value = JsonPrimitive("a")),
-                    VariableIfCondition(name = "ab", value = JsonPrimitive("a")),
+                    VariableIfCondition(name = "lastKey", value = JsonPrimitive("a")),
+                    VariableIfCondition(name = "snippetKeys", value = JsonPrimitive("a")),
                 ),
                 description = "ab",
             ),
@@ -80,7 +80,7 @@ val expectedMergedRules = listOf(
                     simultaneousOptions = null
                 ),
                 to = listOf(
-                    To(setVariable = SetVariable(name = "ab", value = JsonPrimitive(0))),
+                    To(setVariable = SetVariable(name = "snippetKeys", value = JsonPrimitive(0))),
                     To(keyCode = KeyCode.DeleteOrBackspace),
                     To(keyCode = KeyCode.DeleteOrBackspace),
                     To(keyCode = KeyCode.A),
@@ -91,10 +91,10 @@ val expectedMergedRules = listOf(
                 toIfHeldDown = null,
                 parameters = null,
                 conditions = listOf(
-                    VariableIfCondition(name = "lastKeyCode", value = JsonPrimitive("b")),
-                    VariableIfCondition(name = "ab", value = JsonPrimitive("ab")),
-                    VariableUnlessCondition(name = "lastKeyCode", value = JsonPrimitive("c")),
-                    VariableUnlessCondition(name = "bc", value = JsonPrimitive("bc"))
+                    VariableIfCondition(name = "lastKey", value = JsonPrimitive("b")),
+                    VariableIfCondition(name = "snippetKeys", value = JsonPrimitive("ab")),
+                    VariableUnlessCondition(name = "lastKey", value = JsonPrimitive("c")),
+                    VariableUnlessCondition(name = "snippetKeys", value = JsonPrimitive("bc"))
                 ),
                 description = "ab",
             )
@@ -113,16 +113,16 @@ val expectedMergedRules = listOf(
                 ),
                 to = listOf(
                     To(keyCode = KeyCode.B),
-                    To(setVariable = SetVariable(name = "bc", value = JsonPrimitive("b"))),
-                    To(setVariable = SetVariable(name = "lastKeyCode", value = JsonPrimitive("b")))
+                    To(setVariable = SetVariable(name = "snippetKeys", value = JsonPrimitive("b"))),
+                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("b")))
                 ),
                 toIfAlone = null,
                 toAfterKeyUp = null,
                 toIfHeldDown = null,
                 parameters = null,
                 conditions = listOf(
-                    VariableUnlessCondition(name = "lastKeyCode", value = JsonPrimitive("a")),
-                    VariableUnlessCondition(name = "ab", value = JsonPrimitive("a"))
+                    VariableUnlessCondition(name = "lastKey", value = JsonPrimitive("a")),
+                    VariableUnlessCondition(name = "snippetKeys", value = JsonPrimitive("a"))
                 ),
                 description = "bc",
             ),
@@ -136,16 +136,16 @@ val expectedMergedRules = listOf(
                 ),
                 to = listOf(
                     To(keyCode = KeyCode.C),
-                    To(setVariable = SetVariable(name = "bc", value = JsonPrimitive("bc"))),
-                    To(setVariable = SetVariable(name = "lastKeyCode", value = JsonPrimitive("c")))
+                    To(setVariable = SetVariable(name = "snippetKeys", value = JsonPrimitive("bc"))),
+                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("c")))
                 ),
                 toIfAlone = null,
                 toAfterKeyUp = null,
                 toIfHeldDown = null,
                 parameters = null,
                 conditions = listOf(
-                    VariableIfCondition(name = "lastKeyCode", value = JsonPrimitive("b")),
-                    VariableIfCondition(name = "bc", value = JsonPrimitive("b"))
+                    VariableIfCondition(name = "lastKey", value = JsonPrimitive("b")),
+                    VariableIfCondition(name = "snippetKeys", value = JsonPrimitive("b"))
                 ),
                 description = "bc",
             ),
@@ -158,7 +158,7 @@ val expectedMergedRules = listOf(
                     simultaneousOptions = null
                 ),
                 to = listOf(
-                    To(setVariable = SetVariable(name = "bc", value = JsonPrimitive(0))),
+                    To(setVariable = SetVariable(name = "snippetKeys", value = JsonPrimitive(0))),
                     To(keyCode = KeyCode.DeleteOrBackspace),
                     To(keyCode = KeyCode.DeleteOrBackspace),
                     To(keyCode = KeyCode.B),
@@ -169,10 +169,10 @@ val expectedMergedRules = listOf(
                 toIfHeldDown = null,
                 parameters = null,
                 conditions = listOf(
-                    VariableIfCondition(name = "lastKeyCode", value = JsonPrimitive("c")),
-                    VariableIfCondition(name = "bc", value = JsonPrimitive("bc")),
-                    VariableUnlessCondition(name = "lastKeyCode", value = JsonPrimitive("b")),
-                    VariableUnlessCondition(name = "ab", value = JsonPrimitive("ab")),
+                    VariableIfCondition(name = "lastKey", value = JsonPrimitive("c")),
+                    VariableIfCondition(name = "snippetKeys", value = JsonPrimitive("bc")),
+                    VariableUnlessCondition(name = "lastKey", value = JsonPrimitive("b")),
+                    VariableUnlessCondition(name = "snippetKeys", value = JsonPrimitive("ab")),
                 ),
                 description = "bc",
             )
