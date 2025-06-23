@@ -40,16 +40,6 @@ application {
     mainClass = "se.tp21.karabiner.MainKt"
 }
 
-tasks.register<JavaExec>("runMainKt") {
-    group = "build"
-    mainClass.set("se.tp21.karabiner.MainKt")
-    classpath = sourceSets["main"].runtimeClasspath
-}
-
-tasks.named("build") {
-    finalizedBy("runMainKt")
-}
-
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()

@@ -6,16 +6,14 @@ import sh.kau.karabiner.To
 import sh.kau.karabiner.karabinerRule
 import java.util.*
 
-fun snippetReplacementRulesFor(
+fun snippetRuleFor(
     keyCodes: List<KeyCode>,
     keyCodesDesc: String = keyCodes.joinToString("") { it.name.lowercase(Locale.getDefault()) },
     replacement: List<To>,
     replacementDesc: String = replacement.joinToString("") { it.keyCode?.name?.lowercase(Locale.getDefault()) ?: "" },
-): List<KarabinerRule> {
-    return listOf(
-        karabinerRule(
-            description = "snippets - $keyCodesDesc -> $replacementDesc",
-            manipulators = replacementManipulators(keyCodes = keyCodes, replacement = replacement).toTypedArray(),
-        )
+    desc: String? = null,
+): KarabinerRule =
+    karabinerRule(
+        description = desc ?: "snippets - $keyCodesDesc -> $replacementDesc",
+        manipulators = replacementManipulators(keyCodes = keyCodes, replacement = replacement).toTypedArray(),
     )
-}
