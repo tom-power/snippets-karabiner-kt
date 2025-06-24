@@ -1,7 +1,6 @@
-package se.tp21.karabiner.utils
+package se.tp21.karabiner.snippets.rules
 
 import se.tp21.karabiner.snippets.base.fallThrough
-import se.tp21.karabiner.snippets.rules.SnippetRules
 import sh.kau.karabiner.*
 
 fun SnippetRules.toComplexModifications(): ComplexModifications =

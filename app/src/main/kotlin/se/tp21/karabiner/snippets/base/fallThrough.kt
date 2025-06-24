@@ -1,7 +1,7 @@
 package se.tp21.karabiner.snippets.base
 
-import se.tp21.karabiner.utils.VariableKeys.snippetKeys
-import se.tp21.karabiner.utils.setLastKey
+import se.tp21.karabiner.snippets.utils.VariableKeys.snippetKeys
+import se.tp21.karabiner.snippets.utils.setLastKey
 import sh.kau.karabiner.*
 import kotlin.reflect.KClass
 

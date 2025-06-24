@@ -2,9 +2,9 @@ package se.tp21.karabiner
 
 import org.junit.jupiter.api.Test
 import se.tp21.karabiner.snippets.rules.SnippetRules
-import se.tp21.karabiner.utils.toComplexModifications
-import se.tp21.karabiner.utils.decode
-import se.tp21.karabiner.utils.encode
+import se.tp21.karabiner.snippets.rules.toComplexModifications
+import se.tp21.karabiner.snippets.utils.decode
+import se.tp21.karabiner.snippets.utils.encode
 import kotlin.test.assertEquals
 
 class SnippetRulesTest {

@@ -1,4 +1,4 @@
-package se.tp21.karabiner.utils
+package se.tp21.karabiner.snippets.rules
 
 import sh.kau.karabiner.Condition
 import sh.kau.karabiner.Condition.VariableIfCondition

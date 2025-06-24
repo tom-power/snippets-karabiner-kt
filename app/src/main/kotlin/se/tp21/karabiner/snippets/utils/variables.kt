@@ -1,8 +1,8 @@
-package se.tp21.karabiner.utils
+package se.tp21.karabiner.snippets.utils
 
 import kotlinx.serialization.json.JsonPrimitive
-import se.tp21.karabiner.utils.VariableKeys.lastKey
-import se.tp21.karabiner.utils.VariableKeys.snippetKeys
+import se.tp21.karabiner.snippets.utils.VariableKeys.lastKey
+import se.tp21.karabiner.snippets.utils.VariableKeys.snippetKeys
 import sh.kau.karabiner.Condition
 import sh.kau.karabiner.KeyCode
 import sh.kau.karabiner.SetVariable

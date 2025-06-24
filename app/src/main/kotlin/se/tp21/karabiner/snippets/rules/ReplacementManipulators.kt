@@ -1,7 +1,9 @@
-package se.tp21.karabiner.utils
+package se.tp21.karabiner.snippets.rules
 
-import se.tp21.karabiner.utils.Const.delete
-import se.tp21.karabiner.utils.VariableKeys.snippetKeys
+import se.tp21.karabiner.snippets.utils.Const.delete
+import se.tp21.karabiner.snippets.utils.VariableKeys.snippetKeys
+import se.tp21.karabiner.snippets.utils.ifSnippetKeysAndLastKey
+import se.tp21.karabiner.snippets.utils.setSnippetKeysAndLastKey
 import sh.kau.karabiner.*
 
 class ReplacementManipulators(

@@ -1,6 +1,5 @@
-package se.tp21.karabiner.utils
+package se.tp21.karabiner.snippets.rules
 
-import se.tp21.karabiner.snippets.rules.SnippetRules
 import sh.kau.karabiner.*
 
 fun toKarabinerRules(rules: SnippetRules): List<KarabinerRule> =
