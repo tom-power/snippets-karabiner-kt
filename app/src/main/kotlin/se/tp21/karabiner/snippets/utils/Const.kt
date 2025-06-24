@@ -1,4 +1,4 @@
-package se.tp21.karabiner.utils
+package se.tp21.karabiner.snippets.utils
 
 import sh.kau.karabiner.KeyCode
 import sh.kau.karabiner.To

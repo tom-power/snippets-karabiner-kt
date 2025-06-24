@@ -1,6 +1,8 @@
 package se.tp21.karabiner.utils
 
 import kotlinx.serialization.json.JsonPrimitive
+import se.tp21.karabiner.snippets.rules.ReplacementManipulators
+import se.tp21.karabiner.snippets.rules.mergeRules
 import sh.kau.karabiner.*
 import sh.kau.karabiner.Condition.VariableIfCondition
 import sh.kau.karabiner.Condition.VariableUnlessCondition
