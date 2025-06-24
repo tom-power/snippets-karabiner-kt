@@ -4,6 +4,8 @@ Text expansion/replacement similar to [espanso](https://espanso.org/) etc using 
 
 Was an experiment trying out [karabiner-kt](https://github.com/kaushikgopal/karabiner-kt) but seems to work \o/
 
+#### installation
+
 ```shell
 nano /path/to/snippetRules.json # see testSnippetRules.json for example
 clone https://github.com/tom-power/snippets-karabiner-kt.git
@@ -18,3 +20,6 @@ The rules will need to be loaded in the Karabiner elements UI:
 
 To make a change update `snippetRules.json`, then `./gradlew run --args="/path/to/snippetRules.json"`, then remove and add all rules.
 
+#### usage
+
+Type the `keys` configured in `snippetRules.json` and press space, they should be replaced by the `replacement`.
