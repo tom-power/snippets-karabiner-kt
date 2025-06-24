@@ -10,7 +10,10 @@ fun main(args: Array<String>) {
     try {
         val snippetRulesJson = File(args[0]).inputStream().bufferedReader().use { it.readText() }
 
-        val karabinerJson = snippetRulesJson.decode<SnippetRules>().toComplexModifications().encode()
+        val snippetRules = snippetRulesJson.decode<SnippetRules>()
+        val complexModifications = snippetRules.toComplexModifications()
+
+        val karabinerJson = complexModifications.encode()
 
         File("build/snippets-karabiner.json").let {
             it.writeText(karabinerJson)

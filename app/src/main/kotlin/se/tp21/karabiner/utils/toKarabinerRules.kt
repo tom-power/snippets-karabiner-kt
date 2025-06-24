@@ -5,11 +5,11 @@ import sh.kau.karabiner.*
 
 fun toKarabinerRules(rules: SnippetRules): List<KarabinerRule> =
     rules.rules.map { rule ->
-        snippetRuleFor(
+        SnippetKarabinerRuleFor(
             keyCodes = rule.keys.map { it.toKeyCode() },
             replacement = rule.replacement.map { it.toTo() },
             desc = rule.description
-        )
+        ).invoke()
     }
 
 private fun Char.toTo(): To =
