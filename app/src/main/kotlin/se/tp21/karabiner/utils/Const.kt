@@ -9,7 +9,6 @@ object Const {
     )
 }
 
-
 object VariableKeys {
     const val lastKey = "lastKey"
     const val snippetKeys = "snippetKeys"

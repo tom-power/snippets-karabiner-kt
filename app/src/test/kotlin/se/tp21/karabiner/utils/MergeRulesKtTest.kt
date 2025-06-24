@@ -9,10 +9,10 @@ import kotlin.test.assertEquals
 
 class MergeRulesKtTest {
     private val ab = listOf(KeyCode.A, KeyCode.B)
-    private val abRule = KarabinerRule("ab", replacementManipulators(ab, ab.map(::To)))
+    private val abRule = KarabinerRule("ab", ReplacementManipulators(ab, ab.map(::To)).invoke())
 
     private val bc = listOf(KeyCode.B, KeyCode.C)
-    private val bcRule = KarabinerRule("bc", replacementManipulators(bc, bc.map(::To)))
+    private val bcRule = KarabinerRule("bc", ReplacementManipulators(bc, bc.map(::To)).invoke())
 
     @Test
     fun `merges duplicates replacement manipulators in rules`() {
