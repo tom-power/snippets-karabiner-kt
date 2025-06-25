@@ -12,10 +12,11 @@ fun toKarabinerRules(rules: SnippetRules): List<KarabinerRule> =
     }
 
 private fun Char.toTo(): To =
-    maybeKeyCode()
-        ?.let(::To)
-        ?: this.toOtherTo()
-        ?: error("Unknown to: $this")
+    try {
+        this.toKeyCode().let(::To)
+    } catch (e: Exception) {
+        this.toOtherTo() ?: error("Unknown to: $this")
+    }
 
 private fun Char.toOtherTo(): To? =
     when (this) {
@@ -73,10 +74,4 @@ private fun Char.toOtherTo(): To? =
     }
 
 private fun Char.toKeyCode(): KeyCode =
-    maybeKeyCode()
-        ?: error("Unknown KeyCode: $this")
-
-private fun Char.maybeKeyCode(): KeyCode? =
-    KeyCode::class.sealedSubclasses
-        .singleOrNull { it.simpleName.equals(this.toString(), ignoreCase = true) }
-        ?.objectInstance
+    KeyCode.from(this.toString())
