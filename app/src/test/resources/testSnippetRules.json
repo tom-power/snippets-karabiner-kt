@@ -1,14 +1,9 @@
 {
   "rules": [
     {
-      "description": "snippets - cx -> chmodx",
-      "keys": "cx",
-      "replacement": "chmod +x"
-    },
-    {
-      "description": "snippets - ij -> intellij",
-      "keys": "cx",
-      "replacement": "intellij"
+      "description": "snippets - hw -> hello world",
+      "keys": "hw",
+      "replacement": "hello world"
     },
     {
       "description": "snippets - fab -> foo@bar.com",
