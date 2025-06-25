@@ -1,4 +1,4 @@
-### Text expansion for MacOS using [Karabiner elements](https://karabiner-elements.pqrs.org/).
+# Text expansion for MacOS using [Karabiner elements](https://karabiner-elements.pqrs.org/).
 
 Text expansion/replacement similar to [espanso](https://espanso.org/) etc using [karabiner elements](https://karabiner-elements.pqrs.org/)
 
@@ -6,7 +6,7 @@ Was an experiment trying out [karabiner-kt](https://github.com/kaushikgopal/kara
 
 ![demo](https://github.com/tom-power/snippets-karabiner-kt/blob/master/assets/demo.gif)
 
-#### installation
+## Installation
 
 ```shell
 clone https://github.com/tom-power/snippets-karabiner-kt.git
@@ -35,6 +35,6 @@ The rules will need to be loaded in the Karabiner elements UI:
 
 To make a change update `snippetRules.json`, then `./gradlew run --args="/path/to/snippetRules.json"`, then remove and add all rules.
 
-#### usage
+## Usage
 
 Type the `keys` configured in `snippetRules.json` and press space, they should be replaced by the `replacement`.
