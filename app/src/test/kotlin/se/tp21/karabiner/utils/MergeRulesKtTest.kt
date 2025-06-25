@@ -95,8 +95,6 @@ val expectedMergedRules = listOf(
                 conditions = listOf(
                     VariableIfCondition(name = "lastKey", value = JsonPrimitive("b")),
                     VariableIfCondition(name = "snippetKeys", value = JsonPrimitive("ab")),
-                    VariableUnlessCondition(name = "lastKey", value = JsonPrimitive("c")),
-                    VariableUnlessCondition(name = "snippetKeys", value = JsonPrimitive("bc"))
                 ),
                 description = "ab",
             )
@@ -173,8 +171,6 @@ val expectedMergedRules = listOf(
                 conditions = listOf(
                     VariableIfCondition(name = "lastKey", value = JsonPrimitive("c")),
                     VariableIfCondition(name = "snippetKeys", value = JsonPrimitive("bc")),
-                    VariableUnlessCondition(name = "lastKey", value = JsonPrimitive("b")),
-                    VariableUnlessCondition(name = "snippetKeys", value = JsonPrimitive("ab")),
                 ),
                 description = "bc",
             )
