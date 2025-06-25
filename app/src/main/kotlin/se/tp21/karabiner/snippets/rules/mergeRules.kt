@@ -10,43 +10,42 @@ import sh.kau.karabiner.Manipulator
 fun mergeRules(from: List<KarabinerRule>): List<KarabinerRule> {
     val manipulators = from.mapNotNull { it.manipulators }.flatten()
 
-    val duplicatesNegated = duplicatesNegated(manipulators)
+    val withConditionsFromDuplicatesNegated =
+        findDuplicates(manipulators.filterNot { it.from.keyCode == terminalManipulatorKeyCode })
+            .flatMap { duplicates -> withConditionsFromOthersNegated(duplicates) }
 
     return from.map { rule ->
         KarabinerRule(
             description = rule.description,
             manipulators =
                 rule.manipulators?.map { manipulator ->
-                    duplicatesNegated.singleOrNull { it.matches(manipulator) } ?: manipulator
+                    withConditionsFromDuplicatesNegated.singleOrNull { it.matches(manipulator) } ?: manipulator
                 }
         )
     }
 }
 
+private val terminalManipulatorKeyCode = KeyCode.Spacebar
+
 private fun Manipulator.matches(other: Manipulator): Boolean =
     this.from.keyCode == other.from.keyCode
         && this.description == other.description
 
-fun duplicatesNegated(from: List<Manipulator>): List<Manipulator> =
-    duplicateReplacementManipulators(from)
-        .flatMap { withOtherConditionsNegated(it) }
-
-private fun duplicateReplacementManipulators(from: List<Manipulator>): List<List<Manipulator>> =
+private fun findDuplicates(from: List<Manipulator>): List<List<Manipulator>> =
     from
-        .filterNot { it.from.keyCode == KeyCode.Spacebar }
         .groupBy { it.from.keyCode }
         .filter { it.value.size > 1 }
         .map { it.value }
 
-private fun withOtherConditionsNegated(from: List<Manipulator>): List<Manipulator> {
+private fun withConditionsFromOthersNegated(from: List<Manipulator>): List<Manipulator> {
     val conditionsAtIndex = mutableMapOf<Int, List<Condition>?>()
     from.mapIndexed { index, manipulator ->
         conditionsAtIndex.put(index, manipulator.conditions)
     }
     return from.mapIndexed { index, manipulator ->
-        val currentConditions = manipulator.conditions.orEmpty()
+        val conditions = manipulator.conditions.orEmpty()
         val otherConditions = otherConditions(conditionsAtIndex, index)
-        manipulator.copy(conditions = (currentConditions + negate(otherConditions)))
+        manipulator.copy(conditions = (conditions + negate(otherConditions)))
     }
 }
 
