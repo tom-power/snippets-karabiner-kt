@@ -4,6 +4,8 @@ Text expansion/replacement similar to [espanso](https://espanso.org/) etc using 
 
 Was an experiment trying out [karabiner-kt](https://github.com/kaushikgopal/karabiner-kt) but seems to work \o/
 
+![demo](https://github.com/tom-power/snippets-karabiner-kt/blob/master/assets/demo.gif)
+
 #### installation
 
 ```shell
