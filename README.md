@@ -7,11 +7,24 @@ Was an experiment trying out [karabiner-kt](https://github.com/kaushikgopal/kara
 #### installation
 
 ```shell
-nano /path/to/snippetRules.json # see testSnippetRules.json for example
 clone https://github.com/tom-power/snippets-karabiner-kt.git
 cd snippets-karabiner-kt
 ./gradlew run --args="/path/to/snippetRules.json"
-cp ./app/build/*.json ~/.config/karabiner/assets/complex_modifications/
+cp ./app/build/snippets-karabiner.json ~/.config/karabiner/assets/complex_modifications/
+```
+
+Example `snippetRules.json`:
+
+```json
+{
+  "rules": [
+    {
+      "description": "snippets - fab -> foo@bar.com",
+      "keys": "fab",
+      "replacement": "foo@bar.com"
+    }
+  ]
+}
 ```
 
 The rules will need to be loaded in the Karabiner elements UI:

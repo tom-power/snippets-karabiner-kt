@@ -3,176 +3,51 @@
     "description": "snippets expanded with space",
     "rules": [
         {
-            "description": "snippets - cx -> chmodx",
+            "description": "snippets - hw -> hello world",
             "manipulators": [
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "c"
+                        "key_code": "h"
                     },
                     "to": [
-                        {
-                            "key_code": "c"
-                        },
-                        {
-                            "set_variable": {
-                                "name": "snippetKeys",
-                                "value": "c"
-                            }
-                        },
-                        {
-                            "set_variable": {
-                                "name": "lastKey",
-                                "value": "c"
-                            }
-                        }
-                    ],
-                    "description": "cx"
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "x"
-                    },
-                    "to": [
-                        {
-                            "key_code": "x"
-                        },
-                        {
-                            "set_variable": {
-                                "name": "snippetKeys",
-                                "value": "cx"
-                            }
-                        },
-                        {
-                            "set_variable": {
-                                "name": "lastKey",
-                                "value": "x"
-                            }
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "lastKey",
-                            "value": "c"
-                        },
-                        {
-                            "type": "variable_if",
-                            "name": "snippetKeys",
-                            "value": "c"
-                        }
-                    ],
-                    "description": "cx"
-                },
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "spacebar"
-                    },
-                    "to": [
-                        {
-                            "set_variable": {
-                                "name": "snippetKeys",
-                                "value": 0
-                            }
-                        },
-                        {
-                            "key_code": "delete_or_backspace"
-                        },
-                        {
-                            "key_code": "delete_or_backspace"
-                        },
-                        {
-                            "key_code": "c"
-                        },
                         {
                             "key_code": "h"
                         },
                         {
-                            "key_code": "m"
-                        },
-                        {
-                            "key_code": "o"
-                        },
-                        {
-                            "key_code": "d"
-                        },
-                        {
-                            "key_code": "spacebar"
-                        },
-                        {
-                            "key_code": "equal_sign",
-                            "modifiers": [
-                                "left_shift"
-                            ]
-                        },
-                        {
-                            "key_code": "x"
-                        }
-                    ],
-                    "conditions": [
-                        {
-                            "type": "variable_if",
-                            "name": "lastKey",
-                            "value": "x"
-                        },
-                        {
-                            "type": "variable_if",
-                            "name": "snippetKeys",
-                            "value": "cx"
-                        }
-                    ],
-                    "description": "cx"
-                }
-            ]
-        },
-        {
-            "description": "snippets - ij -> intellij",
-            "manipulators": [
-                {
-                    "type": "basic",
-                    "from": {
-                        "key_code": "c"
-                    },
-                    "to": [
-                        {
-                            "key_code": "c"
-                        },
-                        {
                             "set_variable": {
                                 "name": "snippetKeys",
-                                "value": "c"
+                                "value": "h"
                             }
                         },
                         {
                             "set_variable": {
                                 "name": "lastKey",
-                                "value": "c"
+                                "value": "h"
                             }
                         }
                     ],
-                    "description": "cx"
+                    "description": "hw"
                 },
                 {
                     "type": "basic",
                     "from": {
-                        "key_code": "x"
+                        "key_code": "w"
                     },
                     "to": [
                         {
-                            "key_code": "x"
+                            "key_code": "w"
                         },
                         {
                             "set_variable": {
                                 "name": "snippetKeys",
-                                "value": "cx"
+                                "value": "hw"
                             }
                         },
                         {
                             "set_variable": {
                                 "name": "lastKey",
-                                "value": "x"
+                                "value": "w"
                             }
                         }
                     ],
@@ -180,15 +55,15 @@
                         {
                             "type": "variable_if",
                             "name": "lastKey",
-                            "value": "c"
+                            "value": "h"
                         },
                         {
                             "type": "variable_if",
                             "name": "snippetKeys",
-                            "value": "c"
+                            "value": "h"
                         }
                     ],
-                    "description": "cx"
+                    "description": "hw"
                 },
                 {
                     "type": "basic",
@@ -209,13 +84,7 @@
                             "key_code": "delete_or_backspace"
                         },
                         {
-                            "key_code": "i"
-                        },
-                        {
-                            "key_code": "n"
-                        },
-                        {
-                            "key_code": "t"
+                            "key_code": "h"
                         },
                         {
                             "key_code": "e"
@@ -227,25 +96,50 @@
                             "key_code": "l"
                         },
                         {
-                            "key_code": "i"
+                            "key_code": "o"
                         },
                         {
-                            "key_code": "j"
+                            "key_code": "spacebar"
+                        },
+                        {
+                            "key_code": "w"
+                        },
+                        {
+                            "key_code": "o"
+                        },
+                        {
+                            "key_code": "r"
+                        },
+                        {
+                            "key_code": "l"
+                        },
+                        {
+                            "key_code": "d"
                         }
                     ],
                     "conditions": [
                         {
                             "type": "variable_if",
                             "name": "lastKey",
-                            "value": "x"
+                            "value": "w"
                         },
                         {
                             "type": "variable_if",
                             "name": "snippetKeys",
-                            "value": "cx"
+                            "value": "hw"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "lastKey",
+                            "value": "b"
+                        },
+                        {
+                            "type": "variable_unless",
+                            "name": "snippetKeys",
+                            "value": "fab"
                         }
                     ],
-                    "description": "cx"
+                    "description": "hw"
                 }
             ]
         },
@@ -420,22 +314,12 @@
                         {
                             "type": "variable_unless",
                             "name": "lastKey",
-                            "value": "x"
+                            "value": "w"
                         },
                         {
                             "type": "variable_unless",
                             "name": "snippetKeys",
-                            "value": "cx"
-                        },
-                        {
-                            "type": "variable_unless",
-                            "name": "lastKey",
-                            "value": "x"
-                        },
-                        {
-                            "type": "variable_unless",
-                            "name": "snippetKeys",
-                            "value": "cx"
+                            "value": "hw"
                         }
                     ],
                     "description": "fab"
