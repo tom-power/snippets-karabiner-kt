@@ -127,16 +127,6 @@
                             "type": "variable_if",
                             "name": "snippetKeys",
                             "value": "hw"
-                        },
-                        {
-                            "type": "variable_unless",
-                            "name": "lastKey",
-                            "value": "b"
-                        },
-                        {
-                            "type": "variable_unless",
-                            "name": "snippetKeys",
-                            "value": "fab"
                         }
                     ],
                     "description": "hw"
@@ -310,16 +300,6 @@
                             "type": "variable_if",
                             "name": "snippetKeys",
                             "value": "fab"
-                        },
-                        {
-                            "type": "variable_unless",
-                            "name": "lastKey",
-                            "value": "w"
-                        },
-                        {
-                            "type": "variable_unless",
-                            "name": "snippetKeys",
-                            "value": "hw"
                         }
                     ],
                     "description": "fab"

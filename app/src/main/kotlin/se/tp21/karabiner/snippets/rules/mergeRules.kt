@@ -4,6 +4,7 @@ import sh.kau.karabiner.Condition
 import sh.kau.karabiner.Condition.VariableIfCondition
 import sh.kau.karabiner.Condition.VariableUnlessCondition
 import sh.kau.karabiner.KarabinerRule
+import sh.kau.karabiner.KeyCode
 import sh.kau.karabiner.Manipulator
 
 fun mergeRules(from: List<KarabinerRule>): List<KarabinerRule> {
@@ -32,6 +33,7 @@ fun duplicatesNegated(from: List<Manipulator>): List<Manipulator> =
 
 private fun duplicateReplacementManipulators(from: List<Manipulator>): List<List<Manipulator>> =
     from
+        .filterNot { it.from.keyCode == KeyCode.Spacebar }
         .groupBy { it.from.keyCode }
         .filter { it.value.size > 1 }
         .map { it.value }
