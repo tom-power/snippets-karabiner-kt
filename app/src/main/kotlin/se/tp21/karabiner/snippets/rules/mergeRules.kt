@@ -38,25 +38,12 @@ private fun findDuplicates(from: List<Manipulator>): List<List<Manipulator>> =
         .map { it.value }
 
 private fun withConditionsFromOthersNegated(from: List<Manipulator>): List<Manipulator> {
-    val conditionsAtIndex = mutableMapOf<Int, List<Condition>?>()
-    from.mapIndexed { index, manipulator ->
-        conditionsAtIndex.put(index, manipulator.conditions)
-    }
-    return from.mapIndexed { index, manipulator ->
+    return from.map { manipulator ->
         val conditions = manipulator.conditions.orEmpty()
-        val otherConditions = otherConditions(conditionsAtIndex, index)
+        val otherConditions = from.filterNot { it == manipulator }.flatMap { it.conditions ?: emptyList() }
         manipulator.copy(conditions = (conditions + negate(otherConditions)))
     }
 }
-
-private fun otherConditions(
-    conditionsAtIndex: MutableMap<Int, List<Condition>?>,
-    index: Int
-): List<Condition> =
-    conditionsAtIndex
-        .filter { it.key != index }
-        .mapNotNull { it.value }
-        .flatten()
 
 private fun negate(conditions: List<Condition>): List<VariableUnlessCondition> =
     conditions
