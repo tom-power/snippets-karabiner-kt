@@ -13,20 +13,16 @@ fun fallThrough(): List<KarabinerRule> =
         )
     )
 
-private fun <T: KeyCode> keyCodesFor(kClass: KClass<T>) =
+private fun <T : KeyCode> keyCodesFor(kClass: KClass<T>) =
     kClass.sealedSubclasses.mapNotNull { it.objectInstance }
 
 private fun fallThroughManipulatorsFor(keyCodes: List<KeyCode>) =
     keyCodes.map { keyCode ->
         Manipulator(
             from = From(keyCode),
-            to = listOf(
-                To(
-                    keyCode = keyCode,
-                ),
-                To(
-                    setVariable = setLastKey(keyCode)
-                ),
-            ) + unsetVar(snippetKeys)
+            to =
+                unsetVar(snippetKeys) +
+                    To(setVariable = setLastKey(keyCode)) +
+                    To(keyCode = keyCode)
         )
     }.toList()
