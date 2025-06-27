@@ -39,9 +39,9 @@ val expectedMergedRules = listOf(
                     simultaneousOptions = null
                 ),
                 to = listOf(
-                    To(keyCode = KeyCode.A),
                     To(setVariable = SetVariable(name = "snippetKeys", value = JsonPrimitive("a"))),
-                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("a")))
+                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("a"))),
+                    To(keyCode = KeyCode.A),
                 ),
                 toIfAlone = null,
                 toAfterKeyUp = null,
@@ -59,9 +59,9 @@ val expectedMergedRules = listOf(
                     simultaneousOptions = null
                 ),
                 to = listOf(
-                    To(keyCode = KeyCode.B),
                     To(setVariable = SetVariable(name = "snippetKeys", value = JsonPrimitive("ab"))),
-                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("b")))
+                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("b"))),
+                    To(keyCode = KeyCode.B),
                 ),
                 toIfAlone = null,
                 toAfterKeyUp = null,
@@ -112,9 +112,9 @@ val expectedMergedRules = listOf(
                     simultaneousOptions = null
                 ),
                 to = listOf(
-                    To(keyCode = KeyCode.B),
                     To(setVariable = SetVariable(name = "snippetKeys", value = JsonPrimitive("b"))),
-                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("b")))
+                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("b"))),
+                    To(keyCode = KeyCode.B),
                 ),
                 toIfAlone = null,
                 toAfterKeyUp = null,
@@ -135,9 +135,9 @@ val expectedMergedRules = listOf(
                     simultaneousOptions = null
                 ),
                 to = listOf(
-                    To(keyCode = KeyCode.C),
                     To(setVariable = SetVariable(name = "snippetKeys", value = JsonPrimitive("bc"))),
-                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("c")))
+                    To(setVariable = SetVariable(name = "lastKey", value = JsonPrimitive("c"))),
+                    To(keyCode = KeyCode.C),
                 ),
                 toIfAlone = null,
                 toAfterKeyUp = null,

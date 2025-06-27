@@ -14,9 +14,9 @@ fun setSnippetKeysAndLastKey(
     snippetKeys: String,
 ): List<To> =
     listOf(
-        To(keyCode = lastKey),
         To(setVariable = setSnippetKeys(snippetKeys)),
-        To(setVariable = setLastKey(lastKey))
+        To(setVariable = setLastKey(lastKey)),
+        To(keyCode = lastKey),
     )
 
 fun ifSnippetKeysAndLastKey(
