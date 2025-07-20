@@ -13,6 +13,7 @@ plugins {
 }
 
 rootProject.name = "snippets-karabiner-kt"
+include("core")
 include("app")
 
 sourceControl {

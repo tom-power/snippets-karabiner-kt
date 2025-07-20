@@ -1,8 +1,8 @@
 package se.tp21.karabiner
 
 import org.junit.jupiter.api.Test
-import se.tp21.karabiner.snippets.rules.SnippetRules
-import se.tp21.karabiner.snippets.rules.toComplexModifications
+import se.tp21.karabiner.snippets.SnippetRules
+import se.tp21.karabiner.snippets.complexModificationsFrom
 import se.tp21.karabiner.snippets.utils.decode
 import se.tp21.karabiner.snippets.utils.encode
 import kotlin.test.assertEquals
@@ -12,7 +12,7 @@ class SnippetRulesTest {
     fun `snippets rules are correct`() {
         assertEquals(
             expected = snippetRulesComplexModificationJson.trimAll(),
-            actual = snippetRulesJson.decode<SnippetRules>().toComplexModifications().encode().trimAll(),
+            actual = complexModificationsFrom(snippetRulesJson.decode<SnippetRules>()).encode().trimAll(),
         )
     }
 

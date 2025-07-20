@@ -1,9 +1,9 @@
 package se.tp21.karabiner
 
-import se.tp21.karabiner.snippets.rules.SnippetRules
+import se.tp21.karabiner.snippets.SnippetRules
 import se.tp21.karabiner.snippets.utils.decode
 import se.tp21.karabiner.snippets.utils.encode
-import se.tp21.karabiner.snippets.rules.toComplexModifications
+import se.tp21.karabiner.snippets.complexModificationsFrom
 import java.io.File
 
 fun main(args: Array<String>) {
@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
         val snippetRulesJson = File(args[0]).inputStream().bufferedReader().use { it.readText() }
 
         val snippetRules = snippetRulesJson.decode<SnippetRules>()
-        val complexModifications = snippetRules.toComplexModifications()
+        val complexModifications = complexModificationsFrom(snippetRules)
 
         val karabinerJson = complexModifications.encode()
 

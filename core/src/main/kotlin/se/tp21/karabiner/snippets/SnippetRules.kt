@@ -1,4 +1,4 @@
-package se.tp21.karabiner.snippets.rules
+package se.tp21.karabiner.snippets
 
 import kotlinx.serialization.Serializable
 
