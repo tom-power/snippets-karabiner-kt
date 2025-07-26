@@ -10,10 +10,12 @@ import kotlin.test.assertEquals
 class SnippetRulesTest {
     @Test
     fun `snippets rules are correct`() {
-        assertEquals(
-            expected = snippetRulesComplexModificationJson.trimAll(),
-            actual = complexModificationsFrom(snippetRulesJson.decode<SnippetRules>()).encode().trimAll(),
-        )
+        val expected = snippetRulesComplexModificationJson.trimAll()
+        val snippetRules = snippetRulesJson.decode<SnippetRules>()
+
+        val actual = complexModificationsFrom(snippetRules).encode().trimAll()
+
+        assertEquals(expected, actual)
     }
 
     private val snippetRulesJson = javaClass.getResource("/testSnippetRules.json")!!.readText()
