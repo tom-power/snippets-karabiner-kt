@@ -19,9 +19,9 @@ class SnippetKarabinerRuleFor(
             replacement.joinToString("") { it.keyCode?.name?.lowercase(Locale.getDefault()) ?: "" }
 
     override fun invoke(): KarabinerRule {
-        return karabinerRule(
+        return KarabinerRule(
             description = desc ?: "snippets - $keyCodesDesc -> $replacementDesc",
-            manipulators = ReplacementManipulators(keyCodes = keyCodes, replacement = replacement).invoke().toTypedArray(),
+            manipulators = ReplacementManipulators(keyCodes = keyCodes, replacement = replacement).invoke(),
         )
     }
 

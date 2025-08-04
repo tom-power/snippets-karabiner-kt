@@ -7,9 +7,9 @@ import kotlin.reflect.KClass
 
 fun fallThrough(): List<KarabinerRule> =
     listOf(
-        karabinerRule(
+        KarabinerRule(
             description = "snippets - fall through",
-            manipulators = (fallThroughManipulatorsFor(keyCodesFor(KeyCode::class))).toTypedArray()
+            manipulators = fallThroughManipulatorsFor(keyCodesFor(KeyCode::class))
         )
     )
 
