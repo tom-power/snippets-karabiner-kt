@@ -11,7 +11,6 @@ plugins {
     alias(libs.plugins.kotlin.serialization) // Apply the Kotlin serialization plugin
 
     `java-library`
-    idea
 }
 
 repositories {
