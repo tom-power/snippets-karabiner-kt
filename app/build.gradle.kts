@@ -23,7 +23,7 @@ dependencies {
     implementation(libs.bundles.pods4k)
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.kotlin.reflect)
-    implementation("karabiner-kt:core:1.1.2")
+    implementation("karabiner-kt:core:0.2")
     implementation(project(":core"))
 }
 
